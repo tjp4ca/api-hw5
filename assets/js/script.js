@@ -5,21 +5,27 @@ document.querySelector(".time-block").textContent = new Date();
 
 
 
+
 // when save button is clicked
-var save = document.querySelector("#amBtn");
+var save = document.querySelector(".amBtn");
 save.addEventListener("click", saveEvent)
 
-function saveEvent() {
-    var textData = document.querySelector("#amText");
-    // document.getElementById("amText").value;
 
-    localStorage.setItem("event", "value");
-    localStorage.getItem("value");
-    textData.append();
+function saveEvent(event) {
+    textValue = document.getElementById("amText").value;
+    console.log(textValue);
+
+    localStorage.setItem("nineAm", textValue);
+
+    // console.log(event.target.id)
     console.log("clicked")
 }
 
-// click event
+document.getElementById("amText").textContent = localStorage.getItem("nineAm")
+
+
+
+
 
 // inside click event
     //document.getElementById("textareaID").value
