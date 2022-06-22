@@ -274,3 +274,7 @@ document.getElementById("fiveTextBox").textContent = localStorage.getItem("fiveT
 
 //     localStorage.setItem("data", JSON.stringify(data));
 // });
+
+
+
+// fix bug
