@@ -2,8 +2,7 @@ var myDate = $(".time-block")
 document.querySelector(".time-block").textContent = moment().format("MMMM Do, YYYY - hh:mm:ss a");
 
 
-
-var rightNow = moment().format("MMMM Do, YYYY - hh:mm:ss a");
+var rightNow = moment().format("HH");
 console.log(rightNow);
 
 var futureHour = moment().add(1, "hour").format("dddd, MM-D-YYYY [at] hh:mm:ss A");
@@ -12,9 +11,93 @@ console.log(futureHour);
 var pastHour = moment().subtract(1, "hour").format("dddd, MM-D-YYYY [at] hh:mm:ss A");
 console.log(pastHour);
 
-
     // convert to moment object at 5:00pm
     // example var time = moment(date, "L").set("hour", 17);
+
+// Current Time
+rightNow = parseInt(rightNow)
+console.log(rightNow);
+
+// 9am
+if (rightNow > 9) {
+    document.getElementById("nineTextBox").classList.add("past");
+} else if (rightNow < 9) {
+    document.getElementById("nineTextBox").classList.add("future");
+} else { 
+    document.getElementById("nineTextBox").classList.add("present");
+}
+
+// 10am
+if (rightNow > 10) {
+    document.getElementById("tenTextBox").classList.add("past");
+} else if (rightNow < 10) {
+    document.getElementById("tenTextBox").classList.add("future");
+} else { 
+    document.getElementById("tenTextBox").classList.add("present");
+}
+
+// 11am
+if (rightNow > 11) {
+    document.getElementById("elevenTextBox").classList.add("past");
+} else if (rightNow < 11) {
+    document.getElementById("elevenTextBox").classList.add("future");
+} else { 
+    document.getElementById("elevenTextBox").classList.add("present");
+}
+
+// 12pm
+if (rightNow > 12) {
+    document.getElementById("twelveTextBox").classList.add("past");
+} else if (rightNow < 12) {
+    document.getElementById("twelveTextBox").classList.add("future");
+} else { 
+    document.getElementById("twelveTextBox").classList.add("present");
+}
+
+// 13pm
+if (rightNow > 13) {
+    document.getElementById("oneTextBox").classList.add("past");
+} else if (rightNow < 13) {
+    document.getElementById("oneTextBox").classList.add("future");
+} else { 
+    document.getElementById("oneTextBox").classList.add("present");
+}
+
+// 14pm
+if (rightNow > 14) {
+    document.getElementById("twoTextBox").classList.add("past");
+} else if (rightNow < 14) {
+    document.getElementById("twoTextBox").classList.add("future");
+} else { 
+    document.getElementById("twoTextBox").classList.add("present");
+}
+
+// 15pm
+if (rightNow > 15) {
+    document.getElementById("threeTextBox").classList.add("past");
+} else if (rightNow < 15) {
+    document.getElementById("threeTextBox").classList.add("future");
+} else { 
+    document.getElementById("threeTextBox").classList.add("present");
+}
+
+// 16pm
+if (rightNow > 16) {
+    document.getElementById("fourTextBox").classList.add("past");
+} else if (rightNow < 16) {
+    document.getElementById("fourTextBox").classList.add("future");
+} else { 
+    document.getElementById("fourTextBox").classList.add("present");
+}
+
+// 17pm
+if (rightNow > 17) {
+    document.getElementById("fiveTextBox").classList.add("past");
+} else if (rightNow < 17) {
+    document.getElementById("fiveTextBox").classList.add("future");
+} else { 
+    document.getElementById("fiveTextBox").classList.add("present");
+}
 
 
 // 9am save button
