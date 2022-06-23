@@ -5,11 +5,11 @@ document.querySelector(".time-block").textContent = moment().format("MMMM Do, YY
 var rightNow = moment().format("HH");
 console.log(rightNow);
 
-var futureHour = moment().add(1, "hour").format("dddd, MM-D-YYYY [at] hh:mm:ss A");
-console.log(futureHour);
+// var futureHour = moment().add(1, "hour").format("dddd, MM-D-YYYY [at] hh:mm:ss A");
+// console.log(futureHour);
 
-var pastHour = moment().subtract(1, "hour").format("dddd, MM-D-YYYY [at] hh:mm:ss A");
-console.log(pastHour);
+// var pastHour = moment().subtract(1, "hour").format("dddd, MM-D-YYYY [at] hh:mm:ss A");
+// console.log(pastHour);
 
     // convert to moment object at 5:00pm
     // example var time = moment(date, "L").set("hour", 17);
@@ -17,6 +17,8 @@ console.log(pastHour);
 // Current Time
 rightNow = parseInt(rightNow)
 console.log(rightNow);
+
+// color code starts
 
 // 9am
 if (rightNow > 9) {
@@ -99,6 +101,8 @@ if (rightNow > 17) {
     document.getElementById("fiveTextBox").classList.add("present");
 }
 
+
+// save event starts
 
 // 9am save button
 var save9 = document.querySelector(".nineBtn");
@@ -235,46 +239,3 @@ function save5Event() {
 }
 document.getElementById("fiveTextBox").textContent = localStorage.getItem("fiveTextValue")
 
-
-
-
-
-
-
-
-
-
-
-// inside click event
-    //document.getElementById("textareaID").value
-
-
-    // localStorage.setItem('event', 'coding')
-    // console.log(localStorage.getItem('event'))
-    // localStorage.removeItem('event') -- to remove
-
-    // saveData = document.querySelector("#id or .class");
-    // function functionName() {
-
-    // }
-    // saveData.addEventListener("click", function() {
-        
-    //     functionName();
-    // })
-
-
-
-// var saveButton = document.querySelector(".className");
-// saveButton.addEventListener("click", function(event) {
-//     event.preventDefault();
-
-//     var data = {
-
-//     }
-
-//     localStorage.setItem("data", JSON.stringify(data));
-// });
-
-
-
-// fix bug
