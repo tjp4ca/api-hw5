@@ -1,5 +1,5 @@
 var myDate = $(".time-block")
-document.querySelector(".time-block").textContent = moment().format("MMMM Do, YYYY - hh:mm:ss a");
+document.querySelector(".time-block").textContent = moment().format("MMMM Do, YYYY - hh:mm a");
 
 
 var rightNow = moment().format("HH");
